@@ -13,4 +13,4 @@ console.log(rev);
 /*I expect the reverseArray function to be more useful than the 
 reverseArrayInPlace. This is because with the first function if 
 we still want to use the original array it is possible  and fas-
-ter than to still reverse the array again and waste memory */cd
+ter than to still reverse the array again and waste memory */
