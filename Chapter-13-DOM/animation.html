@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animation</title>
+</head>
+<body>
+
+    <div align="center" style="padding: 300px">
+        <img src="1iBCh5m.jpg" alt="" style="position:relative; width: 200px; height: 100px;" >
+        <img src="4EtzadD.jpg" alt="" style="position:relative; width: 100px; height: 50px;">
+    </div>
+</body>
+<script>
+    var img = document.querySelectorAll("img");
+    cat = img[0];
+    hat = img[1]
+    var angle = 0; lastTime = null;
+    function animate(time) {
+        cat.style.marginRight = "100px";
+        hat.style.marginLeft = "-270px";
+        hat.style.marginBottom = "50px";
+        if(lastTime != null)
+            angle += (time - lastTime) * 0.001;
+        lastTime = time;
+        cat.style.top = (Math.sin(angle) * 250) + "px";
+        cat.style.left = (Math.cos(angle) * 550) + "px";
+        hat.style.bottom = (Math.sin(angle * 2) * 100) + "px";
+        hat.style.right = (Math.cos(angle * 2) * 250) + "px";
+        requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+</script>
+<script src="TagName.js"></script>
+</html>
