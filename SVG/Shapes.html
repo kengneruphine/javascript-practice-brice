@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shapes</title>
+</head>
+<body>
+    <canvas width="900" height="800"></canvas>
+</body>
+<script>
+    var cx = document.querySelector("canvas").getContext("2d");
+ /*    cx.beginPath();
+    cx.moveTo(100, 100);
+    cx.lineTo(50,150);
+    cx.lineTo(200, 150);
+    cx.lineTo(150, 100);
+    cx.closePath();
+    cx.moveTo(300, 100);
+    cx.lineTo(250, 150);
+    cx.lineTo(300, 100);
+    cx.lineTo(350, 150);
+    cx.closePath();
+    cx.fillStyle = "red";
+    cx.fill();
+    cx.stroke();
+    cx.stroke(); */
+
+    function trapezium(cordX, cordY){
+        cx.beginPath();
+        cx.moveTo(cordX, cordY);
+        cx.lineTo(cordX - 50, cordY + 50);
+        cx.lineTo(cordX + 100, cordY + 50);
+        cx.lineTo(cordX + 50, cordY);
+        cx.closePath();
+        cx.stroke();
+    }
+    trapezium(100, 123);
+    function RedDiamond(cordX, cordY){
+        cx.beginPath();
+        cx.moveTo(cordX, cordY);
+        cx.lineTo(cordX - 50, cordY + 50);
+        cx.lineTo(cordX, cordY + 100);
+        cx.lineTo(cordX + 50, cordY + 50);
+        cx.closePath();
+        cx.stroke();
+        cx.fillStyle = "red";
+        cx.fill();
+   }
+    RedDiamond(300, 100);
+
+    function zigZag(cordX, cordY){
+        cx.beginPath();
+        cx.moveTo(cordX, cordY);
+        var x = 90;
+        for(var y = cordY; y <= cordY + 400; y+= 20){
+            if(x == 90){
+                cx.lineTo(cordX + x, y);
+                x -= 90;
+            }
+            else if(x == 0){
+                cx.lineTo(cordX, y);
+                x += 90;
+            }
+            cx.stroke();
+        }
+    }
+    zigZag(500, 100);
+</script>
+</html>
