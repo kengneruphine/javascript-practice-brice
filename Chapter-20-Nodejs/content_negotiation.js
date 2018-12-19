@@ -25,9 +25,11 @@ for (var type in types){
             console.log("Request for " + type + ' failed:');
             return;
         }
-        readString(res, (err, value){
+        readString(res, (err, value) => {
             if(err)
                 console.log("The was an error" + err);
         });
     }).end();
 }
+
+//I learned about arrow functions in a tutorail video i watched thought it would e nice to apply it.
