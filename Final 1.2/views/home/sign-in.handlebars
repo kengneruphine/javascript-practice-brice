@@ -1,0 +1,52 @@
+{{> header}}
+
+		<!-- Heading -->
+		{{> heading}}
+
+
+            <div>
+                <div class="w3-row wid-80">
+                    <div class="w3-twothird">
+                        <div class="wid-80">
+                            <h3 class="text-cnt">Thank you for</h3>
+                            <h5 class="text-cnt">Joining Us</h5>
+                        </div>
+                        <h6 class="text-lf" style="font-weight: bold">Enjoy Our vast collection of PDFs from Faculties of</h6>
+                                    <div class="section bg-white">
+                                        <br>
+                                        <ul class="list-area text-cnt lucida">
+                                            <li><a href="#">Engineering and Technology</a></li>
+                                            <li><a href="#">Education</a></li>
+                                            <li><a href="#">Health Sciences</a></li>  
+                                            <li><a href="#">Agricultural Sciences</a></li>
+                                            <li><a href="#">College of Technology</a></li>
+                                        </ul>
+                                    </div>   
+                    </div>
+                    <div class="w3-third">
+                            <div>
+                                <div class="bg-teal-light">
+                                    <div class="sign-up">
+                                        <div class="header">
+                                            <h3 style="color: white;">Sign-in</h3>
+                                        </div>
+                                    <div class="info">
+                                        <form action="/sign-in" method="post" name="sign-in">
+                                        {{#if message}}
+                                            <h6 class="text-cnt" style="color: red;">{{message}}</h6>
+                                        {{/if}}
+                                            <label for="uName">User Name</label>
+                                            <input type="text" name="uName" id="username">
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" id="p1">
+                                            <input type="Submit" value="Login" style="margin: 6px auto"><br />
+                                            <a href="/sign-up">Sign-up</a>
+                                            <a href="#">Forgot password?</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
