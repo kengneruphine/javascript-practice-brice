@@ -1,0 +1,75 @@
+{{> header}}
+
+		<!-- Heading -->
+		{{> heading}}
+
+
+{{#if message}}
+
+    <div class="w3-panel wid-80 clr-theme">
+        <h4 class="text-cnt"> {{message}} </h4>
+    </div>
+
+{{/if}}
+
+<div>
+                <div class="w3-row wid-80">
+                    <div class="w3-twothird">
+                        <div class="wid-80">
+                            <h3 class="text-cnt">Join Us today</h3>
+                            <h5 class="text-cnt">And</h5>
+                        </div>
+                        <h6 class="text-lf" style="font-weight: bold">Have Knowledge</h6>
+                                    <div class="section">
+                                        <br>
+                                        <ul class="list-area text-cnt lucida">
+                                            <li><a href="/please">Agricultural Science</a></li>
+                                            <li><a href="/please">Medical Science</a></li>
+                                            <li><a href="/please">Microbiology and Parasitology</a></li>
+                                            <li><a href="/please">Medical Science</a></li>
+                                            <li><a href="/please">Biochemistry</a></li>  
+                                            <li><a href="/please">Computer Engineering</a></li>
+                                            <li><a href="/please">Electrical Engineering</a></li>
+                                            <li><a href="/please">Computer Science</a></li>
+                                    </div>   
+                    </div>
+                    <div class="w3-third">
+                            <div>
+                                <div class="bg-teal-light">
+                                    <div class="sign-up">
+                                        <div class="header">
+                                            <h3 style="color: white;">Sign-up</h3>
+                                        </div>
+                                    <div class="info">
+                                        <form action="/sign-up" method="post" name="sign-up">
+                                            <label for="matNum">Matriculation Number</label>
+                                            <input type="text" name="matNum" id="matNum" autocomplete="true">
+                                            <div class="msg">Matricule is Short</div><br />
+                                            <label for="uName">User Name</label>
+                                            <input type="text" name="uName" id="username">
+                                            <label for="Faculty">Faculty</label>
+                                            <select name="faculty" id="">
+                                                <option value="FET">Faculty of Engineering and Technology</option>
+                                                <option value="FHS">Faculty of Health Science</option>
+                                                <option value="COT">College of Technology</option>
+                                                <option value="FED">Faculty of Education</option>
+                                                <option value="FAVM">Faculty of Agricultural Science ...</option>
+                                                <option value="SMS"> Faculty of Social and Managemem ...</option>
+                                            </select>
+                                            <label for="p1">Password</label>
+                                            <input type="password" name="p1" id="p1">
+                                            <div class="msg">Required Password length is 5 characters</div><br />
+                                            <label for="p2">Retype Password</label>
+                                            <input type="password" name="p2" id="p2">    
+                                            <div class="msg">Password Mismatch</div><br />                                               
+                                            <div class="wid-40"> 
+                                            <input type="Submit" value="Create account" style="margin: 6px auto">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

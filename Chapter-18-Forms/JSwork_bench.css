@@ -1,0 +1,82 @@
+html{
+    overflow-x: hidden;
+}
+body {
+    margin: 5px;
+}
+
+textarea{
+    border: 2px solid black;
+    border-radius: 12px/6px;
+    margin: 3px;
+    padding: 8px;
+}
+
+.contain{
+    width: 98%;
+    margin: auto;
+    background-color: rgba(6, 110, 58, 0.699);
+}
+
+.dim {
+    width: 48%;
+    height: 600px;
+}
+
+.flt_r{
+    float: right;
+}
+
+.flt_l{
+    float: left;
+}
+
+.code_sec {
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.377);
+    width: 100%;
+    height: 70%;
+    transition: all ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.suggest_sec{
+    border: 2px solid black;
+    border-radius: 12px/6px;
+    margin: 3px;
+    padding: 8px;
+    width: 100%;
+    height: 25%;
+    overflow: auto;
+}
+
+.code_sec:focus{
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.315);
+}
+
+.run_sec{
+    border: 2px solid black;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px/6px;
+    padding: 8px;
+}
+
+.exec {
+    border: 2px solid green;
+    border-radius: 12px 6px;
+    background-color: white;
+    color: green;
+    margin: auto;
+    width: 30%;
+    transition: all ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.exec:hover{
+    background-color: green;
+    border: 2px solid white;
+    color: white;
+}
